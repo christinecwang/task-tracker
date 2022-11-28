@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "text": "Call Chinny",
+      "day": "May 5th - 1pm",
+      "reminder": true,
+      "id": 1
+    },
+    {
+      "text": "Play Valorant",
+      "day": "May 5th - 10pm",
+      "reminder": true,
+      "id": 2
+    },
+    {
+      "text": "Eat Lunch",
+      "day": "May 5th - 1pm",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "SHAKE!",
+      "day": "ASAP",
+      "reminder": false,
+      "id": 4
+    },
+    {
+      "text": "Nap",
+      "day": "May 5th - 5pm",
+      "reminder": true,
+      "id": 5
+    }
+  ]
+}
