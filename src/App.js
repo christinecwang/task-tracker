@@ -19,7 +19,7 @@ const App = () => {
     getTasks();
   }, []);
 
-  //Fetch Tasks
+  // Fetch Tasks
   const fetchTasks = async () => {
     const res = await fetch("http://localhost:5000/tasks");
     const data = await res.json();
@@ -27,7 +27,7 @@ const App = () => {
     return data;
   };
 
-  //Fetch Task
+  // Fetch Task
   const fetchTask = async (id) => {
     const res = await fetch(`http://localhost:5000/tasks/${id}`);
     const data = await res.json();
@@ -35,7 +35,7 @@ const App = () => {
     return data;
   };
 
-  //Add Task
+  // Add Task
   const addTask = async (task) => {
     const res = await fetch("http://localhost:5000/tasks", {
       method: "POST",
@@ -48,10 +48,6 @@ const App = () => {
     const data = await res.json();
 
     setTasks([...tasks, data]);
-
-    // const id = Math.floor(Math.random() * 10000) + 1
-    // const newTask = { id, ...task }
-    // setTasks([...tasks, newTask])
   };
 
   // Delete Task
