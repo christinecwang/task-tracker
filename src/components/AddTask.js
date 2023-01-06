@@ -33,22 +33,30 @@ const AddTask = ({ onAdd }) => {
           onChange={(e) => setText(e.target.value)}
         />
       </div>
-      <div className="form-control">
-        <label>Date (optional)</label>
-        <input
-          type="date"
-          value={day}
-          onChange={(e) => setDay(e.target.value)}
-        />
-      </div>
-      <div className="form-control">
-        <label>Time (optional)</label>
-        <input
-          type="time"
-          value={time}
-          onChange={(e) => setTime(e.target.value)}
-        />
-      </div>
+
+      <section className="container-split">
+        <div className="left-half">
+          <div className="form-control">
+            <label>Date (optional)</label>
+            <input
+              type="date"
+              value={day}
+              onChange={(e) => setDay(e.target.value)}
+            />
+          </div>
+        </div>
+        <div className="right-half">
+          <div className="form-control">
+            <label>Time (optional)</label>
+            <input
+              type="time"
+              value={time}
+              onChange={(e) => setTime(e.target.value)}
+            />
+          </div>
+        </div>
+      </section>
+
       <div className="form-control form-control-check">
         <label>Set Reminder</label>
         <div className="checkbox-div">

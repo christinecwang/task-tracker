@@ -105,7 +105,7 @@ const App = () => {
                     onToggle={toggleReminder}
                   />
                 ) : (
-                  "No Tasks To Show"
+                  <label className="no-task-shown"> No Tasks To Show </label>
                 )}
               </>
             }
