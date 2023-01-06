@@ -1,34 +1,18 @@
 {
   "tasks": [
     {
-      "text": "Call Chinny",
-      "day": "May 5th - 1pm",
-      "reminder": true,
-      "id": 1
-    },
-    {
-      "text": "Play Valorant",
-      "day": "May 5th - 10pm",
-      "reminder": true,
+      "text": "Doctor Appointment",
+      "day": "2023-01-12",
+      "time": "10:45",
+      "reminder": false,
       "id": 2
     },
     {
-      "text": "Eat Lunch",
-      "day": "May 5th - 1pm",
-      "reminder": true,
-      "id": 3
-    },
-    {
-      "text": "SHAKE!",
-      "day": "ASAP",
+      "text": "Bob's Birthday Shopping",
+      "day": "2023-01-13",
+      "time": "",
       "reminder": false,
-      "id": 4
-    },
-    {
-      "text": "Nap",
-      "day": "May 5th - 5pm",
-      "reminder": true,
-      "id": 5
+      "id": 3
     }
   ]
 }
