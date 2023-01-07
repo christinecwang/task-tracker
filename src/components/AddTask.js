@@ -1,55 +1,55 @@
-import { useState } from "react";
+import { useState } from "react"
 
 const AddTask = ({ onAdd }) => {
-  const [text, setText] = useState("");
-  const [day, setDay] = useState("");
-  const [time, setTime] = useState("");
-  const [reminder, setReminder] = useState(false);
+  const [text, setText] = useState("")
+  const [day, setDay] = useState("")
+  const [time, setTime] = useState("")
+  const [reminder, setReminder] = useState(false)
 
   const onSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     if (!text) {
-      alert("Please add a task");
-      return;
+      alert("Please add a task")
+      return
     }
 
-    onAdd({ text, day, time, reminder });
+    onAdd({ text, day, time, reminder })
 
-    setText("");
-    setDay("");
-    setTime("");
-    setReminder(false);
-  };
+    setText("")
+    setDay("")
+    setTime("")
+    setReminder(false)
+  }
 
   return (
-    <form className="add-form" onSubmit={onSubmit}>
-      <div className="form-control">
+    <form className='add-form' onSubmit={onSubmit}>
+      <div className='form-control'>
         <label>Task</label>
         <input
-          type="text"
-          placeholder="Add Task"
+          type='text'
+          placeholder='Add Task'
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
       </div>
 
-      <section className="container-split">
-        <div className="left-half">
-          <div className="form-control">
+      <section className='container-split'>
+        <div className='left-half'>
+          <div className='form-control'>
             <label>Date (optional)</label>
             <input
-              type="date"
+              type='date'
               value={day}
               onChange={(e) => setDay(e.target.value)}
             />
           </div>
         </div>
-        <div className="right-half">
-          <div className="form-control">
+        <div className='right-half'>
+          <div className='form-control'>
             <label>Time (optional)</label>
             <input
-              type="time"
+              type='time'
               value={time}
               onChange={(e) => setTime(e.target.value)}
             />
@@ -57,11 +57,11 @@ const AddTask = ({ onAdd }) => {
         </div>
       </section>
 
-      <div className="form-control form-control-check">
+      <div className='form-control form-control-check'>
         <label>Set Reminder</label>
-        <div className="checkbox-div">
+        <div className='checkbox-div'>
           <input
-            type="checkbox"
+            type='checkbox'
             checked={reminder}
             value={reminder}
             onChange={(e) => setReminder(e.currentTarget.checked)}
@@ -69,8 +69,8 @@ const AddTask = ({ onAdd }) => {
         </div>
       </div>
 
-      <input type="submit" value="Save Task" className="btn btn-block" />
+      <input type='submit' value='Save Task' className='btn btn-block' />
     </form>
-  );
-};
-export default AddTask;
+  )
+}
+export default AddTask

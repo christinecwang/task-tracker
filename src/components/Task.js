@@ -1,30 +1,30 @@
-import { FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa"
 
 const Meridian = (task) => {
   var timeSplit = task.time.split(":"),
     hours,
     minutes,
-    meridian;
+    meridian
 
-  hours = timeSplit[0];
-  minutes = timeSplit[1];
+  hours = timeSplit[0]
+  minutes = timeSplit[1]
 
   if (hours > 12) {
-    meridian = "PM";
-    hours -= 12;
+    meridian = "PM"
+    hours -= 12
   } else if (hours < 12) {
-    meridian = "AM";
-    if (hours === 0) hours = 12;
+    meridian = "AM"
+    if (hours === 0) hours = 12
   } else {
-    meridian = "PM";
+    meridian = "PM"
   }
 
   if (!task.time) {
-    return task.time;
+    return task.time
   } else {
-    return hours + ":" + minutes + " " + meridian;
+    return hours + ":" + minutes + " " + meridian
   }
-};
+}
 
 const Task = ({ task, onDelete, onToggle }) => {
   return (
@@ -42,7 +42,7 @@ const Task = ({ task, onDelete, onToggle }) => {
       <p>{task.day}</p>
       <p>{Meridian(task)}</p>
     </div>
-  );
-};
+  )
+}
 
-export default Task;
+export default Task
